@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-const Todolist = () => {
+const Todolist_first = () => {
 
     const [jobInput, setJobInput] = useState('');
     const [listIndex, setListIndex] = useState(1);
@@ -11,8 +11,6 @@ const Todolist = () => {
     };
 
     const onAddBtnClick = () => {
-
-        console.log("언제실행되지")
 
         if(isEmpty(jobInput)) {
             alert('할 일을 입력하세요.');
@@ -80,4 +78,4 @@ const Todolist = () => {
 
 }
 
-export default Todolist;
+export default Todolist_first;
